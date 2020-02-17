@@ -154,7 +154,7 @@ Verify that the URLs above are using port 80, rather than port 8300 (i.e. `http:
 
 #### Home Assistant and Home Assistant Core on Docker
 
-No further actions are required
+If you are using Alexa, discovery of the emulated Hue-hub will only work if you are using `--net=host`. This is due to the fact that discovery uses multicast, and multicast only works with Docker-containers if they are using `--net=host`
 
 #### Home Assistant Core in a Python venv
 
